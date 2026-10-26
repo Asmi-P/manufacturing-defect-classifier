@@ -10,7 +10,7 @@ A Streamlit web application allows users to upload labelled test data, select a 
 
 - **Dataset:** Predicting Manufacturing Defects
 - **Source:** Kaggle
-- **Dataset link:** https://www.kaggle.com/datasets/rabieelkharoua/predicting-manufacturing-defects-dataset
+- **Dataset link:** [Predicting Manufacturing Defects on Kaggle](https://www.kaggle.com/datasets/rabieelkharoua/predicting-manufacturing-defects-dataset)
 - **Problem type:** Binary classification
 - **Number of instances:** 3,240
 - **Number of input features:** 16
@@ -23,7 +23,7 @@ The dataset is synthetic. Results from this experiment should not be interpreted
 
 ## c. GitHub Repository Link
 
-**Repository URL:** TODO — add the published GitHub repository URL.
+**Repository URL:** [https://github.com/Asmi-P/manufacturing-defect-classifier](https://github.com/Asmi-P/manufacturing-defect-classifier)
 
 ## d. Models Used and Evaluation
 
@@ -73,18 +73,26 @@ The application provides:
 - Confusion matrix and classification report
 - Evaluation using saved models without retraining
 
-**Live Streamlit App:** TODO — add the deployed Streamlit Community Cloud URL.
+**Live Streamlit App:** [Manufacturing Defect Classification](https://manufacturing-defect-classifier-db7tlepol2rvmfbtivempe.streamlit.app/)
 
 ## Repository Contents
 
 - `app.py` — Streamlit application
 - `requirements.txt` — Python dependencies
 - `test_data.csv` — labelled held-out test dataset
-- `model/` — saved trained models
-- `notebooks/` — project notebook and experiments
+- `model/` — saved trained models:
+  - `decision_tree.joblib`
+  - `knn.joblib`
+  - `logistic_regression.joblib`
+  - `naive_bayes.joblib`
+  - `svm.joblib`
+- `notebooks/assignment2.ipynb` — project notebook and experiments
+- `data/manufacturing_defect_dataset.csv` — original dataset
 
 ## Reproducibility
 
 The train-test split uses `test_size=0.20`, `random_state=42` and stratification. The trained models are saved using Joblib and loaded by the Streamlit application.
+
+The application evaluates uploaded labelled test data using the selected saved model and does not retrain the model.
 
 The reported metrics are from this experiment's held-out test split. They do not guarantee the same performance on new or real-world data.
