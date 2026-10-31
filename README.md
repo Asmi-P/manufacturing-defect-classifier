@@ -125,7 +125,7 @@ The GitHub repository is organised as follows:
   - `logistic_regression.joblib`
   - `naive_bayes.joblib`
   - `svm.joblib`
-- `notebooks/assignment2.ipynb` — notebook containing the project workflow and experiments.
+- `assignment2.ipynb` — notebook containing the project workflow and experiments.
 - `data/manufacturing_defect_dataset.csv` — original dataset used for the experiment.
 
 ## g. Reproducibility
